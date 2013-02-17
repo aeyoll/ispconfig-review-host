@@ -14,7 +14,7 @@ done;
 
 query="SELECT domain FROM web_domain WHERE type ='vhost'"
 
-for j in $(/Applications/MAMP/Library/bin/mysql -h $db_host -u $db_user -p$db_password $db_name << eof
+for j in $(/Applications/MAMP/Library/bin/mysql -N -h $db_host -u $db_user -p$db_password $db_name << eof
 $query
 eof)
 do
