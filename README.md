@@ -17,7 +17,7 @@ $ git clone git@github.com:aeyoll/ispconfig-review-host.git
 
 ## Configuration
 
-Change the first lines of create-websites-reviews.sh with your own MySQL parameters to the ISPConfig DB:
+Change the first lines of `create-websites-reviews.sh` with your own MySQL parameters to the ISPConfig DB:
 
 ```bash
 db_user="@USER@"
@@ -27,10 +27,17 @@ db_host="@HOST@"
 
 ## Usage
 
+To generate review-host-files:
+
+```bash
+$ ./create-websites-reviews.sh
+```
+
+Then, just use review-host normaly:
+
 ```bash
 $ review-host
 review-host listening on port 8899
 ```
 
-Then, just check your browser at `http://localhost:8899/
-
+To view the screenshots, check your browser at `http://localhost:8899/`
